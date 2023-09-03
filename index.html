@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>BY: ONEKH.ME</title>
+  <link href="https://vjs.zencdn.net/7.14.3/video-js.css" rel="stylesheet" />
+  <script src="https://vjs.zencdn.net/7.14.3/video.js"></script>
+  <style>
+    .video-js .vjs-big-play-button {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+   
+</head>
+<body>
+
+  <video id="my_video_1" class="video-js vjs-default-skin" controls preload="auto" data-setup='{}' poster="https://i0.wp.com/pic4.iqiyipic.com/image/20221214/02/05/a_100482344_m_601_en_1600_900.webp">
+    <source src="https://bigf.bigo.sg/asia_live/V4s7/17wcxs.mp4" type="video/mp4" />
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a web browser that
+      <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+    </p>
+  </video>
+<script>
+videojs('my_video_1', {
+  width: "100%",
+  hieght: "100%",
+  breakpoints: {
+    tiny: 300,
+    xsmall: 400,
+    small: 500,
+    medium: 600,
+    large: 700,
+    xlarge: 800,
+    huge: 900
+  },
+  autoplay: true,
+  controls: true,
+  fluid: true
+});
+</script>
+</body>
+</html>
